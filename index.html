@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Evaluation: Make Your Choice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="card">
+        <h1>Product Evaluation: Make Your Choice</h1>
+
+        <!-- Display Product Image -->
+        <img
+          id="product-image"
+          src="images/product1.jpg"
+          alt="Product Image"
+          class="product-image"
+        />
+
+        <!-- Display Product Name -->
+        <h2 id="product-name">Product 1</h2>
+
+        <!-- Decision Buttons -->
+        <div class="decision-box">
+          <button class="btn accept-btn" onclick="makeDecision('Accept')">
+            Accept
+          </button>
+          <button class="btn reject-btn" onclick="makeDecision('Reject')">
+            Reject
+          </button>
+        </div>
+
+        <!-- Result box showing the decision -->
+        <div id="selection-result" class="result"></div>
+
+        <!-- Hidden message that appears after making a decision -->
+        <div id="hidden-message" class="hidden-message"></div>
+
+        <!-- Progress text or next step message -->
+        <div id="new-step" class="new-step"></div>
+
+        <!-- Progress bar -->
+        <div class="progress">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
